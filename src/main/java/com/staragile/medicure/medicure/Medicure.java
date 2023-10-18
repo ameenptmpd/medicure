@@ -17,8 +17,7 @@ public class Medicure {
 	public Medicure() {
 		super();
 	}
-	
-	
+		
 	public Medicure(String bankingId, String customerName, String customerAddress, String contactNumber) {
 		super();
 		this.bankingId = bankingId;
