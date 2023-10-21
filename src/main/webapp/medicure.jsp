@@ -78,7 +78,7 @@
             <label for="id">Enter your Doctor ID</label>
             <input type="text" name="id" id="id" size="20">
 
-            <label for="name">Enter your name:</label>
+            <label for="name">Enter name:</label>
             <input type="text" name="name" id="name" size="20">
 
             <label for="address">Enter your address:</label>
