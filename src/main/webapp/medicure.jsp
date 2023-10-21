@@ -73,7 +73,7 @@
 </head>
 <body>
     <div style="margin: 5px 10px 5px 0;">
-        <h3 class="form-header">MyMedicure Registration</h3>
+        <h3 class="form-header">MyMedicure Registration Form</h3>
         <form action="addAccounts" id="bankingForm" type="POST">
             <label for="id">Enter your Doctor ID</label>
             <input type="text" name="id" id="id" size="20">
