@@ -13,7 +13,7 @@ pipeline {
             }
 	stage ('git checkout') {
             steps {
-                git 'https://github.com/ameenptmpd/medicure.git'
+                sh 'git clone https://github.com/ameenptmpd/medicure.git'
             }
         }
         stage("k8s-deployment")
