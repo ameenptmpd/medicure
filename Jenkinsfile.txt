@@ -21,7 +21,7 @@ pipeline {
 			steps{
                 withCredentials([string(credentialsId: 'K8S-TOKEN', variable: 'KUBE_API_TOKEN')]) {
                 sh '''
-                sh $WORKSPACE/medicure/set-k8s-context.sh $KUBE_API_EP $KUBE_API_TOKEN $CERT
+                sh $WORKSPACE/medicure/certs/set-k8s-context.sh $KUBE_API_EP $KUBE_API_TOKEN $CERT
                 docker pull ameenpt/medicure-app:latest
                 kubectl apply -f medicure-service.yaml
                 '''
