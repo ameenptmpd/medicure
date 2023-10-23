@@ -11,6 +11,11 @@ pipeline {
                     cleanWs()
                 }
             }
+	stage ('git checkout') {
+            steps {
+                git 'https://github.com/ameenptmpd/medicure.git'
+            }
+        }
         stage("k8s-deployment")
 		{
 			steps{
